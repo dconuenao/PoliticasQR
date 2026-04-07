@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FamilyCard - Políticas de Crédito</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background-color: #1a1a1a; color: white; display: flex; flex-direction: column; align-items: center; }
+        header { width: 100%; background-color: #0d2142; padding: 15px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; border-bottom: 2px solid #2a3b58; }
+        .branding { display: flex; align-items: center; }
+        .logo-placeholder { width: 40px; height: 40px; background: #eee; color: #333; display: flex; align-items: center; justify-content: center; font-weight: bold; border-radius: 4px; margin-right: 10px; }
+        .info h1 { font-size: 14px; margin: 0; }
+        .info p { font-size: 11px; margin: 0; opacity: 0.8; }
+        .vigencia { font-size: 10px; text-align: right; }
+        
+        .pdf-container { width: 90%; max-width: 500px; height: 60vh; margin-top: 20px; background: white; border-radius: 8px; overflow: hidden; }
+        iframe { width: 100%; height: 100%; border: none; }
+        
+        .btn-descarga { margin-top: 20px; width: 90%; max-width: 500px; background-color: #1d3557; color: white; text-align: center; padding: 15px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        footer { margin-top: 20px; font-size: 10px; opacity: 0.5; text-align: center; padding-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="branding">
+        <div class="logo-placeholder">FC</div>
+        <div class="info">
+            <h1>FamilyCard</h1>
+            <p>Políticas de Crédito</p>
+        </div>
+    </div>
+    <div class="vigencia">Vigente desde<br>abr 2025</div>
+</header>
+
+<div class="pdf-container">
+    <iframe src="politicas.pdf#toolbar=0" type="application/pdf"></iframe>
+</div>
+
+<a href="politicas.pdf" download class="btn-descarga">⬇ Descargar PDF</a>
+
+<footer>
+    familycard.github.io/politicas<br>
+    © FamilyCard Chile
+</footer>
+
+</body>
+</html>
